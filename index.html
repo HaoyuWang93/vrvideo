@@ -39,7 +39,7 @@
 </head>
 <body>
     <center>
-      <p>tap/click to page to start</p>
+      <p>tap/click to start</p>
 <!--        <div id="wrapper"></div> -->
 <div id="target"></div>
 
@@ -48,7 +48,7 @@
     <script type="text/javascript" charset="utf-8" src="dist/kaleidoscope.min.js"> </script>
     <script type="text/javascript" charset="utf-8">
       window.addEventListener('DOMContentLoaded', function(e) {
-        this.viewer = new Kaleidoscope.Video({autoplay: true, muted: false, height: 1000, width: 2000, source: 'http://thiago.me/demo-360/cool.mp4', containerId: '#target'});
+        this.viewer = new Kaleidoscope.Video({autoplay: true, muted: false, height: 1080, width: 1920, source: 'http://thiago.me/demo-360/cool.mp4', containerId: '#target'});
         this.viewer.render();
         document.body.addEventListener('click', function() {
             this.viewer.play();
