@@ -50,6 +50,7 @@
     <script type="text/javascript" charset="utf-8">
       window.addEventListener('DOMContentLoaded', function(e) {
         this.viewer = new Kaleidoscope.Video({autoplay: true, muted: false, height: 1080, width: 1920, source: 'quarantine.mp4', containerId: '#target'});
+        this.viewer.render();
         this.viewer.play();
       })
     </script>
