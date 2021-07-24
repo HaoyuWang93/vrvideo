@@ -49,7 +49,7 @@
     <script type="text/javascript" charset="utf-8" src="dist/kaleidoscope.min.js"> </script>
     <script type="text/javascript" charset="utf-8">
       window.addEventListener('DOMContentLoaded', function(e) {
-        this.viewer = new Kaleidoscope.Video({autoplay: true, muted: false, height: 1080, width: 1920, source: 'quarantine.mp4', containerId: '#target'});
+        this.viewer = new Kaleidoscope.Video({autoplay: true, loop: true, muted: false, height: 1080, width: 1920, source: 'quarantine.mp4', containerId: '#target'});
         this.viewer.render();
                document.body.addEventListener('mousemove', function() {
             this.viewer.play();
